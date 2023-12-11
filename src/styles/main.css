@@ -1,4 +1,4 @@
-.container {
+.container { /* Container geral do menu*/
   display: flex;
   flex-direction: column;
   height: 100vh;
@@ -14,7 +14,7 @@
   width: 100%;
   background-color: #000000;
   color: #ffffff;
-  border-bottom: 5px solid #ffd700;
+  border-bottom: 5px solid #ffd700; /* Linha que divide o menu principal do painel*/
 }
 
 .panel {
@@ -32,8 +32,9 @@
 }
 
 .enemy {
-  background-image: url("../images/ralph.png");
-  background-size: cover;
+  background-image: url("../images/detona-ralph-gift-2.gif");
+  background-size: contain;
+  background-repeat: no-repeat;
 }
 
 .menu-lives {
@@ -42,7 +43,8 @@
   justify-content: center;
 }
 
-.menu-time h2:nth-child(2),
+/*Para inserir espaço de separação entre o nome dos menus (Time Left/Your Score) e os números. Quando usamos o recurso "nth-child(2) estamos dizendo ao CSS que queremos aplicar a estilização somente no h2 filho de número dois (por isso temos o 2 entre parênteses)."*/
+.menu-time h2:nth-child(2), 
 .menu-score h2:nth-child(2) {
   margin-top: 1rem;
 }
