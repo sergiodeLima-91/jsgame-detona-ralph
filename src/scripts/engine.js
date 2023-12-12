@@ -11,7 +11,7 @@ const state = {
     gameVelocity: 1000,
     hitPosition: 0,
     result: 0, //Pontuação geral do usuário no game.
-    curretTime: 20, //Manipula o tempo na contagem regressiva. 
+    curretTime: 60, //Manipula o tempo na contagem regressiva. 
   },
   actions: {
     timerId: setInterval(randomSquare, 1000),
